@@ -1,0 +1,13 @@
+/bin/
+/dist/
+*.exe
+*.test
+*.out
+coverage.out
+.env
+.env.*
+!.env.example
+*.db
+*.db-wal
+*.db-shm
+.DS_Store
