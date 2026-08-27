@@ -9,10 +9,10 @@ import (
 func TestNormalize(t *testing.T) {
 	t.Parallel()
 	cases := map[string]string{
-		"git@github.com:flazouh/mneme.git":     "github.com/flazouh/mneme",
-		"https://github.com/flazouh/mneme.git": "github.com/flazouh/mneme",
+		"git@github.com:flazouh/mneme.git":        "github.com/flazouh/mneme",
+		"https://github.com/flazouh/mneme.git":    "github.com/flazouh/mneme",
 		"https://user:x@github.com/flazouh/mneme": "github.com/flazouh/mneme",
-		"GitHub.com/Flazouh/Mneme":             "github.com/flazouh/mneme",
+		"GitHub.com/Flazouh/Mneme":                "github.com/flazouh/mneme",
 	}
 	for in, want := range cases {
 		got, err := project.Normalize(in)

@@ -74,9 +74,9 @@ func (l Lifecycle) ActiveRecall() bool {
 type SourceKind string
 
 const (
-	SourceExplicitUser          SourceKind = "explicit_user_instruction"
+	SourceExplicitUser           SourceKind = "explicit_user_instruction"
 	SourceVerifiedRepositoryFact SourceKind = "verified_repository_fact"
-	SourceAgentInference        SourceKind = "agent_inference"
+	SourceAgentInference         SourceKind = "agent_inference"
 )
 
 func (s SourceKind) Valid() bool {

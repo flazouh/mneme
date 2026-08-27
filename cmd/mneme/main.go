@@ -20,8 +20,8 @@ import (
 	"github.com/flazouh/mneme/internal/daemon"
 	"github.com/flazouh/mneme/internal/embedder"
 	"github.com/flazouh/mneme/internal/engine"
-	"github.com/flazouh/mneme/internal/memory"
 	"github.com/flazouh/mneme/internal/mcpserver"
+	"github.com/flazouh/mneme/internal/memory"
 	"github.com/flazouh/mneme/internal/store"
 	"github.com/modelcontextprotocol/go-sdk/mcp"
 )

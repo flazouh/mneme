@@ -27,10 +27,10 @@ type Request struct {
 }
 
 type Response struct {
-	ID       string          `json:"id"`
-	OK       bool            `json:"ok"`
-	Result   json.RawMessage `json:"result,omitempty"`
-	Error    *RPCError       `json:"error,omitempty"`
+	ID     string          `json:"id"`
+	OK     bool            `json:"ok"`
+	Result json.RawMessage `json:"result,omitempty"`
+	Error  *RPCError       `json:"error,omitempty"`
 }
 
 type RPCError struct {
